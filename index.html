@@ -47,11 +47,10 @@
     <div class="flexo-h">
         <div class="flexo-v">
             <div class="spacer"></div>
-            <h1>Outono/Inverno 2021</h1>
-            <h2>Frete grátis</h2>
-            <h2>+20% OFF na segunda peça</h2>
+            <h1>Clique no botão e veja</h1>
+            <h2>Efeitos bacanas</h2>
             <div class="spacer"></div>
-            <button type="button" onclick="bgTransition()" class="btn cta">COMPRE AGORA</button>
+            <button type="button" onclick="bgTransition()" class="btn cta" id="botao">QUERO</button>
             <div class="spacer"></div>
         </div>
     </div>
@@ -69,9 +68,19 @@
 </body>
 
 <script>
+    var x = 0;
     function bgTransition() {
-        d3.select("body").transition().style("background-color", "black");
-        d3.select("#camp").attr("class", "campaign2")
+        if (x==0) {
+            d3.select("body").transition().duration(1000).style("background-color", "black");
+            d3.select("#camp").attr("class", "campaign2");
+            d3.select("#botao").transition().duration(1000).style("width", "200px");
+            x = 1;
+        } else {
+            d3.select("body").transition().duration(1000).style("background-color", "#E63946");
+            d3.select("#camp").attr("class", "campaign");
+            d3.select("#botao").transition().duration(1000).style("width", "140px");
+            x = 0;
+        }
         return;
     }
 </script>
