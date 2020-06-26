@@ -99,3 +99,9 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.campaign2 {
+    background-image: url(img/chambray.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
