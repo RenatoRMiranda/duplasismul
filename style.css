@@ -1,0 +1,101 @@
+body{
+    background-color: #E63946;
+    color :#F1FAEE;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+ h2{
+    color :#A8DADC;
+    font-weight: bold;
+ }
+
+.searchicon{
+    color: #1D3557;
+    font-size: 30px;
+}
+
+.searchicon:hover{
+    color: #457B9D;
+}
+
+.btn{
+    background-color: #E63946;
+    color: #F1FAEE;
+}
+
+@media (max-width: 1000px){
+    .busca{
+        width: 200px;
+    }
+}
+
+.btn:hover{
+    animation: pulse;
+    animation-duration: 1s;
+    color: #1D3557;
+}
+
+.cta{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.flexo-v {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 120px;
+    box-shadow: 5px 5px 20px rgba(68, 68, 68, 0.6);
+    border: #457B9D;
+    border-style: solid;
+    border-width: 20px;
+}
+
+.flexo-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item-box{
+    width: 800px;
+    height: 60vh;
+}
+
+.item-in-box{
+    object-fit:contain; height: 70vh; width: inherit;
+}
+
+@media (max-width: 800px) {
+    .item-box{
+        width: 100vw;
+    }
+    .item-in-box{
+        object-fit:cover;
+    }
+}
+
+.spacer{
+    height: 40px;
+}
+
+a{
+    color: #A8DADC;
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+}
+
+.campaign {
+    background-image: url(img/denim2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
